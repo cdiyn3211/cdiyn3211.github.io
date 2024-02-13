@@ -9,8 +9,40 @@
         </style>
         <script src="https://randojs.com/1.0.0.js"></script>
         <script>
-            function showRandomNumber(){
-                document.getElementById("myNumber").innerHTML = rando(50, 1000);
+            function showTargetNumber(){
+                document.getElementById("myNumber").innerHTML = rando(100, 1000);
+            }
+        </script>
+        <style>
+            #myNumber{
+                font-size:100px;
+                text-align:center;
+                margin:50px auto;
+                font-family:Arial, sans-serif;
+            }
+        </style>
+
+
+        <script src="https://randojs.com/1.0.0.js"></script>
+        <script>
+            function showSmallNumber(){
+                document.getElementById("myNumber").innerHTML = rando(1,25);
+            }
+        </script>
+        <style>
+            #myNumber{
+                font-size:100px;
+                text-align:center;
+                margin:50px auto;
+                font-family:Arial, sans-serif;
+            }
+        </style>
+
+
+        <script src="https://randojs.com/1.0.0.js"></script>
+        <script>
+            function showBigNumber(){
+                document.getElementById("myNumber").innerHTML = rando(50,100);
             }
         </script>
         <style>
