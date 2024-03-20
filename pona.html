@@ -7,10 +7,9 @@
    </head>
 <body style="background-color:powderblue;", onload="getWord();">
  <h2>Learn Toki Pona</h2>
-   
   <script>
-     <input type="button" value="Toki Definition" onclick="tokiWords();">
     function tokiWords(){
+        document.getElementById("result").innerHTML="Work"
        
         import java.util.scanner
         System.out.prinln("Started");
@@ -48,7 +47,7 @@
        
     }
 </script>
-   
+   <button onclick="tokiWords()" id="wordGotten">Toki Definitions</button>
      <br>
      <br>
 <a href="./"><button>Home</button></a>
