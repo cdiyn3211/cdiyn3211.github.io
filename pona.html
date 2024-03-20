@@ -8,13 +8,20 @@
 <body style="background-color:powderblue;" onload="tokiWords()">
  <h2>Learn Toki Pona</h2>
    
-   <button id="wordGotten">please</button>
+   <input type="button" value="Get First Toki Definition"/>
+   <p></p>
    <script> 
-      var btn = document.getElementById(“wordGotten”);
-      btn.addEventListener(“click”, tokiWords);
-      }
+      const button document.querySelector("input");
+      const paragraph = document.querySelector("p");
+
+      button.addEventListener("click", tokiWords);
+      
       function tokiWords() { 
-        alert("Hello World!");
+        if (button.value === "Get First Toki Definition"){
+           button.value = "Get Another Definition";
+           paragraph.textContent = "First Definition";
+        } else{
+           paragraph.textContent = "Not the First anymore";
       } 
    </script>
      <br>
