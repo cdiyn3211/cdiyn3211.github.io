@@ -10,8 +10,10 @@
    
 
 <script>
-   function getToki(val){
-      return val[Math.floor((Math.random()*val.length))];
+   function getToki(){
+      let tokiWords = ["a", "akesi"]
+      let word = tokiWords[Math.floor(Math.random() * myShows.length)];
+      return word
    }
    function changeColor(col){
       const elem = document.getElementById("wordGotten");
@@ -22,7 +24,7 @@
    
 
    <p id="wordGotten">Toki word Hopefully</p>
-   <button onclick="getToki([1,2,3]);"> dkfla</button>
+   <button onclick="getToki();">do</button>
    <button onclick="changeColor('blue');">Red</button>
 
    <br>
