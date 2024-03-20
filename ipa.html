@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>IPA Practice</title>
+      <title></title>
    </head>
 <body style="background-color:powderblue;">
  <h2>random word generator</h2>
@@ -26,31 +26,26 @@
    
     function getWord(){
      
-      
+      //Make the dictionary of the words
       var theWord= [
-        'dog',
-        'potato',
-        'cow',
-        'parrot',
-        'stone',
-        'watch',
-         'house',
-         'biolumonesance',
-        'brake',
-        'potato/salad',
-        'trip',
-        'hipopotomus',
-        'mask',
-        'chicken',
-        'Pneumonoultramicroscopicsilicovolcanoconiosis',
+        "a",
+         "akesi",
+         "ala"
       ];
 
-      
+       //Make the definitions of the words
+       var wordDef= [
+          "Emphasis or emotion",
+          "Reptile, Amphibian",
+          "No, Not, Zero, Nothing"
+
+
+      //Choose random index
       var wordNum = Math.floor(Math.random() * theWord.length)-1;
       
-     alfkjda;lfsd
-      output.textContent = theWord[wordNum];
-      output.textContent = theWord[wordNum+1];
+
+      //Outputs random definition
+      output.textContent = wordDef[wordNum];
     }
 </script>
 test
