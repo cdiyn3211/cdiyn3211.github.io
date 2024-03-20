@@ -8,24 +8,20 @@
 <body style="background-color:powderblue;" onload="tokiWords()">
  <h2>Learn Toki Pona</h2>
    
-   <input type="button" value="Get First Toki Definition"/>
-   <p></p>
-   <script> 
-      const button document.querySelector("input");
-      const paragraph = document.querySelector("p");
+<div>
+  <button type="randomSong" onclick="randomSong()">Random Music</button>
+  <input name="randomSong" id="randomSong">
+</div>
 
-      button.addEventListener("click", tokiWords);
-      
-      function tokiWords() { 
-        if (button.value === "Get First Toki Definition"){
-           button.value = "Get Another Definition";
-           paragraph.textContent = "First Definition";
-        } else{
-           paragraph.textContent = "Not the First anymore";
-      } 
-   </script>
-     <br>
-     <br>
+<script>
+
+var song = Array("song1", "song2", "song3", "song4", "song5", "song6");
+
+function randomSong() {
+  var randomSong = song[Math.floor(Math.random() * song.length)];
+  document.getElementById('randomSong').value = randomSong;
+}
+</script>
 <a href="./"><button>Home</button></a>
      <br>
 <a href="./pi"><button>Wonders of Pi</button></a>
