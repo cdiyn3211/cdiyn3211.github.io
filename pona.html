@@ -10,20 +10,15 @@
    
 
 <script>
+   function getToki(val){
+      const tokiWords = ["","a"]
+      const elem = document.getElementById("wordGotten");
+      elem.value = val;
+</script>
 
-var words = Array("a", "akesi", "ala");
-var defs = Array("Emphasis", "Reptile", "Nothing");
-
-function fun() { 
-         document.write("Hello");
-         document.getElementById("result").innerHTML = "The function fun() is triggered !"; 
-      } 
-   </script>
-   Calling js function using HTML button <br><br>
-   <button onclick = "fun()"> click  !</button> 
-   <p> 
-      <div id = "result"> </div> 
-   </p> 
+   <p id="wordGotten">Toki word Hopefully</p>
+   <button onclick="getToki(Math.floor(Math.random() * tokiWords.length+1);">Please work</button>
+   
 <a href="./"><button>Home</button></a>
      <br>
 <a href="./pi"><button>Wonders of Pi</button></a>
