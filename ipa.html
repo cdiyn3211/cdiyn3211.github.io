@@ -5,10 +5,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title></title>
    </head>
-<body style="background-color:powderblue;">
- <h2>random word generator</h2>
+<body style="background-color:powderblue;", onload="getWord()">
+ <h2>Learn Toki Pona</h2>
   <div>
-    <button>generate</button>
+    <button>Get New Word</button>
   </div>
   <div>
    
@@ -17,6 +17,7 @@
   <div id="output"></div>
 
   <script>
+     import java.util.scanner
    
     var btn = document.querySelector("button");
     var out = document.getElementById("output");
@@ -46,6 +47,17 @@
 
       //Outputs random definition
       output.textContent = wordDef[wordNum];
+
+       //Makes scanner to take in guess
+       Scanner reader = new Scanner(system.in);
+       System.out.println("What word matches this definition?");
+       guess = reader.next();
+       if (guess == theWord[wordNum]) {
+          System.out.println("Congrats!!");
+       } else {
+          System.out.println("Sorry! Try again.");
+       }
+       
     }
 </script>
 test
