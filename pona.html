@@ -12,14 +12,13 @@
 <script>
    function getToki(val){
       const tokiWords = ["","a"]
-      const elem = document.getElementById("wordGotten");
-      elem.value = val;
+      document.getElementById("wordGotten").value = tokiWords[val];
       elem.style.color =val;
    }
 </script>
 
    <p id="wordGotten">Toki word Hopefully</p>
-   <button onclick="getToki('Math.floor(Math.random() * tokiWords.length+1)');">Pleaseladsjf </button>
+   <button onclick="getToki('Math.floor(Math.random() * tokiWords.length+1)');">Please </button>
    <button onclick="getToki('blue');">Blue</button>
 
    <br>
