@@ -14,10 +14,12 @@
 
 <script>
 
-var song = Array("song1", "song2", "song3", "song4", "song5", "song6");
+var words = Array("a", "akesi", "ala");
+var defs = Array("Emphasis", "Reptile", "Nothing");
 
 function tokiWords() {
-  var randomSong = song[Math.floor(Math.random() * song.length)];
+  var randDef = defs[Math.floor(Math.random() * defs.length)];
+   System.out.println(randDef);
   document.getElementById('tokiWords').value = "Hello";
 }
 </script>
