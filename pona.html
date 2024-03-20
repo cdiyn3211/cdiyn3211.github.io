@@ -11,43 +11,8 @@
    
   <script>
     function tokiWords(){
-       
-        import java.util.scanner
-        System.out.prinln("Started");
-         //Make the dictionary of the words
-         var theWord= [
-           "a",
-            "akesi",
-            "ala"
-         ];
-   
-          //Make the definitions of the words
-          var wordDef= [
-             "Emphasis or emotion",
-             "Reptile, Amphibian",
-             "No, Not, Zero, Nothing"
-             ];
-   
-   
-         //Choose random index
-         var wordNum = Math.floor(Math.random() * theWord.length)-1;
-         
-   
-         //Outputs random definition
-         output.textContent = wordDef[wordNum];
-   
-          //Makes scanner to take in guess
-          Scanner reader = new Scanner(system.in);
-          System.out.println("What word matches this definition?");
-          guess = reader.next();
-          if (guess == theWord[wordNum]) {
-             System.out.println("Congrats!!");
-          } else {
-             System.out.println("Sorry! Try again.");
-          }
-       
-    }
-</script>
+      System.out.println("hello world");
+   </script>
    
   <button onclick="tokiWords();">Toki Word</button>
      <br>
