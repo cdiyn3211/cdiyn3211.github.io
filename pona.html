@@ -8,14 +8,16 @@
 <body style="background-color:powderblue;", onload="getWord();">
  <h2>Learn Toki Pona</h2>
 
-   
-  <script type="text/javascript">
-    function tokiWords(){
-      System.out.println("hello world");
-    }
+   <script> 
+      function fun() { 
+         document.getElementById("result").innerHTML = "The function fun() is triggered !"; 
+      } 
    </script>
-   
-  <button onclick="tokiWords();">Toki </button>
+   Calling js function using HTML button <br><br>
+   <button onclick = "fun()"> click me !</button> 
+   <p> 
+      <div id = "result"> </div> 
+   </p> 
      <br>
      <br>
 <a href="./"><button>Home</button></a>
