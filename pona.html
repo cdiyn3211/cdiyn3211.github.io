@@ -7,47 +7,49 @@
    </head>
 <body style="background-color:powderblue;", onload="getWord();">
  <h2>Learn Toki Pona</h2>
+   
+   <button id = "wordgotten">Get Toki Pona Word</button>
   <script>
     function getWord(){
        
-     import java.util.scanner
-     System.out.prinln("Started");
-      //Make the dictionary of the words
-      var theWord= [
-        "a",
-         "akesi",
-         "ala"
-      ];
-
-       //Make the definitions of the words
-       var wordDef= [
-          "Emphasis or emotion",
-          "Reptile, Amphibian",
-          "No, Not, Zero, Nothing"
-          ];
-
-
-      //Choose random index
-      var wordNum = Math.floor(Math.random() * theWord.length)-1;
-      
-
-      //Outputs random definition
-      output.textContent = wordDef[wordNum];
-
-       //Makes scanner to take in guess
-       Scanner reader = new Scanner(system.in);
-       System.out.println("What word matches this definition?");
-       guess = reader.next();
-       if (guess == theWord[wordNum]) {
-          System.out.println("Congrats!!");
-       } else {
-          System.out.println("Sorry! Try again.");
-       }
+        import java.util.scanner
+        System.out.prinln("Started");
+         //Make the dictionary of the words
+         var theWord= [
+           "a",
+            "akesi",
+            "ala"
+         ];
+   
+          //Make the definitions of the words
+          var wordDef= [
+             "Emphasis or emotion",
+             "Reptile, Amphibian",
+             "No, Not, Zero, Nothing"
+             ];
+   
+   
+         //Choose random index
+         var wordNum = Math.floor(Math.random() * theWord.length)-1;
+         
+   
+         //Outputs random definition
+         output.textContent = wordDef[wordNum];
+   
+          //Makes scanner to take in guess
+          Scanner reader = new Scanner(system.in);
+          System.out.println("What word matches this definition?");
+          guess = reader.next();
+          if (guess == theWord[wordNum]) {
+             System.out.println("Congrats!!");
+          } else {
+             System.out.println("Sorry! Try again.");
+          }
        
     }
+     document.getElementById("wordgotten").addEventListener("click", getWord);
 </script>
-   <button onclick="getWord()">Get Toki Pona Word</button>
-     <br>
+     <br>a;fdlkjfa
      <br>
 <a href="./"><button>Home</button></a>
      <br>
