@@ -8,21 +8,22 @@
 <body style="background-color:powderblue;" onload="tokiWords()">
  <h2>Learn Toki Pona</h2>
    
-<div>
-  <button type="tokiWords" onclick="tokiWords()" id="tokiWords">Toki Pona </button>
-</div>
 
 <script>
 
 var words = Array("a", "akesi", "ala");
 var defs = Array("Emphasis", "Reptile", "Nothing");
 
-function tokiWords() {
-   alert("It worked);
-  var randDef = defs[Math.floor(Math.random() * defs.length)];
-  document.getElementById('tokiWords').value = "Hello";
-}
+ function fun() { 
+    System.out.println("hello");
+    alert("work")
+         document.getElementById("result").innerHTML = "The function fun() is triggered !"; 
+      } 
 </script>
+   <button onclick = "fun()"> click me !</button> 
+   <p> 
+      <div id = "result"> </div> 
+   </p> 
 <a href="./"><button>Home</button></a>
      <br>
 <a href="./pi"><button>Wonders of Pi</button></a>
