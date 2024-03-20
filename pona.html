@@ -9,17 +9,18 @@
  <h2>Learn Toki Pona</h2>
    
 <div>
-  <button type="randomSong" onclick="randomSong()">Random Music</button>
-  <input name="randomSong" id="randomSong">
+  <button type="tokiWords" onclick="tokiWords()">Random Music</button>
+  <input name="tokiWords" id="tokiWords">
 </div>
 
 <script>
 
-var song = Array("song1", "song2", "song3", "song4", "song5", "song6");
+var words = Array("a", "akesi", "ala");
+var definitions = Array("Emphasis, Confirmation", "Reptile, Amphibian", "No, None, Zero, Nothing");
 
-function randomSong() {
-  var randomSong = song[Math.floor(Math.random() * song.length)];
-  document.getElementById('randomSong').value = randomSong;
+function tokiWords() {
+  var randomDef = definitions[Math.floor(Math.random() * definitions.length)];
+  document.getElementById('tokiWords').value = tokiWords;
 }
 </script>
 <a href="./"><button>Home</button></a>
