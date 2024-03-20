@@ -15,12 +15,11 @@
 
 <script>
 
-var words = Array("a", "akesi", "ala");
-var definitions = Array("Emphasis, Confirmation", "Reptile, Amphibian", "No, None, Zero, Nothing");
+var song = Array("song1", "song2", "song3", "song4", "song5", "song6");
 
-function tokiWords() {
-  var randomDef = definitions[Math.floor(Math.random() * definitions.length)];
-  document.getElementById('tokiWords').value = tokiWords;
+function randomSong() {
+  var randomSong = song[Math.floor(Math.random() * song.length)];
+  document.getElementById('randomSong').value = randomSong;
 }
 </script>
 <a href="./"><button>Home</button></a>
