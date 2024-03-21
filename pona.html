@@ -12,6 +12,7 @@
 <script>
    var globalVal = -1;
    function getToki(){
+      document.getElementById("definition").innerHTML= "";
       let tokiWords = ["a", "akesi", "ala", "alasa"];
       let wordIndex = Math.floor(Math.random() * tokiWords.length);
       globalVal=wordIndex
@@ -37,7 +38,10 @@
    
    <p id="words"></p>
    <p id="definition"></p>
-   <button onclick="getToki();">Get Toki Pona </button>
+   <br>
+   <br>
+   
+   <button onclick="getToki();">Get Toki Pona Word</button>
    <button onclick="getDef();" id="defBtn">Get Toki Pona Definition</button>
 
    <br>
