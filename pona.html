@@ -10,23 +10,29 @@
    
 
 <script>
+   //Sets up global variable for index of lists
    var globalVal = -1;
    
    function getToki(){
-      document.getElementById("definition").innerHTML= "";
+      //Resets the definition text
+      document.getElementById("definition").innerHTML= "  ";
+      //Defines list of all toki pona words
       let tokiWords = ["a", "akesi", "ala", "alasa", "ale", "anpa", "ante", "anu", "awen", "e", "en", "epiku", "esun", "ijo", "ike", "ilo", "insa", "jaki", "jan", "jelo", "jo", "kala",
                       "kalama", "kama", "kasi", "ken", "kepeken", "kili", "kin", "kipisi", "kiwen", "ko", "kon", "kule", "kulupu", "kute", "la", "lanpan", "lape", "laso", "lawa", "leko",
                       "len", "lete", "li", "lili", "linja", "lipu", "loje", "lon", "luka", "lukin", "lupa", "ma", "mama", "mani", "meli", "meso", "mi", "mije", "misikeke", "moku", "moli",
                       "monsi", "monsuta", "mu", "mun", "musi", "mute", "namako", "nanpa", "nasa", "nasin", "nena", "ni", "nimi", "noka", "o", "olin", "ona", "open", "pakala", "pali", "palisa",
                       "pan", "pana", "pi", "pilin", "pimeja", "pini", "pipi", "poka", "poki", "pona", "sama", "seli", "selo", "seme", "sewi", "sijelo", "sike", "sin", "sina", "sinpin", "sitelen", "soko",
                       "sona", "soweli", "suli", "suno", "supa", "suwi", "tan", "taso", "tawa", "telo", "tenpo", "toki", "tomo", "tonsi", "tu", "unpa", "uta", "utala", "walo", "wan", "waso", "wawa", "weka", "wile"];
+      //Randomly chooses value for index then changes global variable to be the same
       let wordIndex = Math.floor(Math.random() * tokiWords.length);
       globalVal=wordIndex
+      //Changes word text to be the randomly chosen toki pona word
       let word = tokiWords[wordIndex];
       document.getElementById("words").innerHTML= word;
    }
 
    function getDef(){
+      //Defines list of corresponding defintions to the above words
       let tokiDefs = ["Emphasis", "Reptile, Amphibian", "No, Nothing, Zero, Not", "Hunt, Seek, Forage", "All, Everything, Universe, Life, 100", "Downward, Lowly, Floor, Below", "Different, Altered, Changed",
                      "Or, Choose, Decide", "Enduring, Kept, Safe, Waiting", "Separates Verb and Direct Object", "And, Combines Multiple Subjects", "Epic, Cool, Awesome", "Market, Shop, Bazaar, Business Transactions",
                      "Thing, Phenomenon, Object", "Bad, Negative, Complicated", "Tool, Implement, Machine", "Center, Inside, Internal Organs, Stomach", "Gross, Obscene, Unclean", "Human Being, Person, Somebody",
@@ -44,12 +50,15 @@
                      "Round, Circular, Ball, Wheel", "New, Additional, Fresh", "You", "Face, Foremost, Front, Wall", "Image, Picture, Symbol, Writing", "Fungus, Fungi", "Know, Be Skilled At, Information", "Animal, Land Mammal", "Big, Heavy, Important, Tall",
                      "Sun, Brightness, Light Source", "Horizontal Surface, Thing to Rest On", "Sweet, Cute, Fragrant", "By, From, Because Of", "But, However, Only", "Going To, Forward, Moving", "Water, Fluid, Beverages", "Time, Duration, Period, Situation", "Communicate, Speak, Think, Hello",
                      "House, Room, Building", "Non-Binary, Gender Non-Conforming", "Two, Cut", "Have Sex With", "Mouth, Lips, Jaw", "Battle, Challenge, Sturggle Against", "White, Whiteish", "Unique, United, One", "Bird, Winged Creature", "Strong, Powerful, Confident, Energetic", "Absent, Away, Ignored", "Must, Need, Require, Wish"];
+     //Checks if val >= 0, which means a word has been selected
       if (globalVal >= 0){
+         //Picks out an element from definitions list with the same index as the word list
          let defs = tokiDefs[globalVal];
+         //Changes value of definitions text to the chosen definition
          document.getElementById("definition").innerHTML=defs;
       } else {
-         let defs = tokiDefs[Math.floor(Math.random() * tokiDefs.length)];
-         document.getElementById("definition").innerHTML= defs;
+         //If the user hasn't generated a random word before clicking the definition button, it tells them to do that
+         document.getElementById("definition").innerHTML= "Generate a word to define first!";
       }
       
    }
@@ -57,9 +66,9 @@
 
 </script>
 
-   
-   <p id="words"></p>
-   <p id="definition"></p>
+   //Gives text spots for the functions to change
+   <p id="words">  </p>
+   <p id="definition">  </p>
    <br>
    <br>
    
