@@ -11,6 +11,7 @@
 
 <script>
    function getToki(){
+      let blanks = document.getElementById("wordGotten").textContent
       let tokiWords = ["a", "akesi"];
       let word = tokiWords[Math.floor(Math.random() * myShows.length)];
       document.getElementById("wordGotten").textContent= word.toString();
@@ -24,7 +25,7 @@
    
 
    <p id="wordGotten">Toki word Hopefully</p>
-   <button onclick="getToki();">Please</button>
+   <button onclick="getToki();">kha</button>
    <button onclick="changeColor('blue');">Red</button>
 
    <br>
