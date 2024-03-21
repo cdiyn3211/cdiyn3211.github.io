@@ -58,6 +58,8 @@
          document.getElementById("definition").innerHTML=defs;
       } else {
          //If the user hasn't generated a random word before clicking the definition button, it tells them to do that
+         
+         document.getElementById("definition").style.color= "red";
          document.getElementById("definition").innerHTML= "Generate a word to define first!";
       }
       
