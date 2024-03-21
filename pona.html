@@ -17,7 +17,8 @@
       let tokiWords = ["a", "akesi", "ala", "alasa", "ale", "anpa", "ante", "anu", "awen", "e", "en", "epiku", "esun", "ijo", "ike", "ilo", "insa", "jaki", "jan", "jelo", "jo", "kala",
                       "kalama", "kama", "kasi", "ken", "kepeken", "kili", "kin", "kipisi", "kiwen", "ko", "kon", "kule", "kulupu", "kute", "la", "lanpan", "lape", "laso", "lawa", "leko",
                       "len", "lete", "li", "lili", "linja", "lipu", "loje", "lon", "luka", "lukin", "lupa", "ma", "mama", "mani", "meli", "meso", "mi", "mije", "misikeke", "moku", "moli",
-                      "monsi", "monsuta", "mu", "mun", "musi", "mute", "namako", "nanpa", "nasa", "nasin", "nena", "ni", "nimi", "noka", "o", "olin", "ona", "open"];
+                      "monsi", "monsuta", "mu", "mun", "musi", "mute", "namako", "nanpa", "nasa", "nasin", "nena", "ni", "nimi", "noka", "o", "olin", "ona", "open", "pakala", "pali", "palisa",
+                      "pan", "pana", "pi", "pilin", "pimeja", "pini", "pipi", "poka", "poki", "pona", "sama", "seli", "selo", "seme", "sewi", "sijelo", "sike", "sin", "sina"];
       let wordIndex = Math.floor(Math.random() * tokiWords.length);
       globalVal=wordIndex
       let word = tokiWords[wordIndex];
@@ -36,7 +37,10 @@
                      "Parent, Ancestor, Creator, Sustainer", "Money, Cash, Wealth, Large Domesticated Animal", "Woman, Female, Wife", "Midpoint, Middle, Mediocre, Neither", "I, Me, We, Us", "Man, Masculine, Husband", 
                      "Medicine, Medicinal", "Eat, Drink, Consume", "Dead, Dying", "Rear, Behind, Back", "Fear, Dread, Monster, Predator", "Animal Noise, Non-speech Vocalization", "Moon, Night Sky Light, Star, Glow",
                      "Artistic, Entertaining", "Many, A Lot", "Embellishment, Spice, Extra", "-th, Numbers", "Unusual, Strange, Drunk", "Way, Custom, Path, Road", "Bump, Hill, Mountain, Nose", "That, This", "Name, Word", "Foot, Leg, Organ of Locomotion, Bottom",
-                     "Hey!", "Love, Have Compassion For, Respect", "He, She, It, They", "Begin, Open, Turn On"];
+                     "Hey!", "Love, Have Compassion For, Respect", "He, She, It, They", "Begin, Open, Turn On", "Broken, Harmed, Expletive", "Do, Take Action, Build", "Long Hard Thing, Stick, Branch", "Cereal, Bread, Grain",
+                     "Give, Send, Emit, Release", "Of, Divides Noun Group That Describes First Noun Group", "Heart, Feeling, Emotion", "Black, Dark, Unlit", "Ago, Completed, Past", "Bug, Insect, Spider", "Hip, Next To, Beside",
+                     "Container, Bowl, Vessel", "Good, Peaceful, Simple", "Same, Similar, Peer, Sibling", "Fire, Cooking Element, Heat", "Outer Form, Shell, Skin", "What, Which", "Area Above, Higher Up, Divine, Sacred", "Body, Physical State, Torso",
+                     "Round, Circular, Ball, Wheel", "New, Additional, Fresh", "You"];
       if (globalVal >= 0){
          let defs = tokiDefs[globalVal];
          document.getElementById("definition").innerHTML=defs;
