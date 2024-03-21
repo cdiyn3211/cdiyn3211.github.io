@@ -16,7 +16,8 @@
       document.getElementById("definition").innerHTML= "";
       let tokiWords = ["a", "akesi", "ala", "alasa", "ale", "anpa", "ante", "anu", "awen", "e", "en", "epiku", "esun", "ijo", "ike", "ilo", "insa", "jaki", "jan", "jelo", "jo", "kala",
                       "kalama", "kama", "kasi", "ken", "kepeken", "kili", "kin", "kipisi", "kiwen", "ko", "kon", "kule", "kulupu", "kute", "la", "lanpan", "lape", "laso", "lawa", "leko",
-                      "len", "lete", "li", "lili", "linja", "lipu", "loje", "lon", "luka", "lukin", "lupa", "ma", "mama", "mani", "meli"];
+                      "len", "lete", "li", "lili", "linja", "lipu", "loje", "lon", "luka", "lukin", "lupa", "ma", "mama", "mani", "meli", "meso", "mi", "mije", "misikeke", "moku", "moli",
+                      "monsi", "monsuta", "mu", "mun", "musi", "mute", "namako", "nanpa", "nasa", "nasin", "nena", "ni", "nimi", "noka", "o", "olin", "ona", "open"];
       let wordIndex = Math.floor(Math.random() * tokiWords.length);
       globalVal=wordIndex
       let word = tokiWords[wordIndex];
@@ -32,7 +33,10 @@
                      "Colorful, Pigmented, Part of the LGBTQ+", "Community, Group, Nation", "Ear, Hear, Listen", "Between Context Phrases", "Take, Seize, Catch", "Sleeping, Get", "Blue, Green", "Head, Mind, Control, Lead, Own",
                      "Stairs, Square, Block, Corner, Cube", "Cloth, Clothing, Cover, Layer of Privacy", "Cold, Cool, Raw", "Between Subject and Verb Unless Subject is mi or sina", "Little, Small, Young", "Long Flexible Thing Like Hair or Rope",
                      "Flat Object, Book, Card, Phone", "Red", "Located At, Real, True", "Arm, Hand, Touch, Interact", "Eye, Look, See, Read", "Door, Hole, Orifice, Window", "Earth, Land, Country, Soil", 
-                     "Parent, Ancestor, Creator, Sustainer", "Money, Cash, Wealth, Large Domesticated Animal", "Woman, Female, Wife"];
+                     "Parent, Ancestor, Creator, Sustainer", "Money, Cash, Wealth, Large Domesticated Animal", "Woman, Female, Wife", "Midpoint, Middle, Mediocre, Neither", "I, Me, We, Us", "Man, Masculine, Husband", 
+                     "Medicine, Medicinal", "Eat, Drink, Consume", "Dead, Dying", "Rear, Behind, Back", "Fear, Dread, Monster, Predator", "Animal Noise, Non-speech Vocalization", "Moon, Night Sky Light, Star, Glow",
+                     "Artistic, Entertaining", "Many, A Lot", "Embellishment, Spice, Extra", "-th, Numbers", "Unusual, Strange, Drunk", "Way, Custom, Path, Road", "Bump, Hill, Mountain, Nose", "That, This", "Name, Word", "Foot, Leg, Organ of Locomotion, Bottom",
+                     "Hey!", "Love, Have Compassion For, Respect", "He, She, It, They", "Begin, Open, Turn On"];
       if (globalVal >= 0){
          let defs = tokiDefs[globalVal];
          document.getElementById("definition").innerHTML=defs;
