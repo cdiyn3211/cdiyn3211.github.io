@@ -13,27 +13,29 @@
    function getToki(){
       let tokiWords = ["a", "akesi", "ala", "alasa"];
       let word = tokiWords[Math.floor(Math.random() * tokiWords.length)];
-      document.getElementById("wordGotten").innerHTML= word;
+      document.getElementById("words").innerHTML= word;
+      
+      myButton = document.getElementById(‘defBtn’);
+      if (tokiWords.includes(word));
+         myButton.addEventListener("click",defWord(){
+            document.getElementById("definition").innerHTML= word;
+         })
    }
 
    function getDef(){
       let tokiDefs = ["Emphasis", "Reptile, Amphibian", "No, Nothing, Zero, Not", "Hunt, Seek, Forage"];
       let defs = tokiDefs[Math.floor(Math.random() * tokiDefs.length)];
-      document.getElementById("wordGotten").innerHTML= defs;
+      document.getElementById("definition").innerHTML= defs;
    }
    
-   function changeColor(col){
-      const elem = document.getElementById("wordGotten");
-      elem.style.color = col;
-   }
+
 </script>
 
    
-
-   <p id="wordGotten"></p>
-   <button onclick="getToki();">Get Toki Pona Word</button>
-   <button onclick="getDef();">Get Toki Pona Definition</button>
-   <button onclick="changeColor('blue');" value="Red">Red</button>
+   <p id="words"></p>
+   <p id="definition"></p>
+   <button onclick="getToki();">Get Toki Pona Word?</button>
+   <button onclick="getDef();" id="defBtn">Get Toki Pona Definition</button>
 
    <br>
    <br>
