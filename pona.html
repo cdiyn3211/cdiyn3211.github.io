@@ -13,7 +13,9 @@
    var globalVal = -1;
    function getToki(){
       document.getElementById("definition").innerHTML= "";
-      let tokiWords = ["a", "akesi", "ala", "alasa"];
+      let tokiWords = ["a", "akesi", "ala", "alasa", "ale", "anpa", "ante", "anu", "awen", "e", "en", "epiku", "esun", "ijo", "ike", "ilo", "insa", "jaki", "jan", "jelo", "jo", "kala",
+                      "kalama", "kama", "kasi", "ken", "kepeken", "kili", "kin", "kipisi", "kiwen", "ko", "kon", "kule", "kulupu", "kute", "la", "lanpan", "lape", "laso", "lawa", "leko",
+                      "len", "lete", "li", "lili", "linja", "lipu", "loje", "lon", "luka", "lukin", "lupa", "ma", "mama", "mani", "meli"];
       let wordIndex = Math.floor(Math.random() * tokiWords.length);
       globalVal=wordIndex
       let word = tokiWords[wordIndex];
@@ -21,7 +23,15 @@
    }
 
    function getDef(){
-      let tokiDefs = ["Emphasis", "Reptile, Amphibian", "No, Nothing, Zero, Not", "Hunt, Seek, Forage"];
+      let tokiDefs = ["Emphasis", "Reptile, Amphibian", "No, Nothing, Zero, Not", "Hunt, Seek, Forage", "All, Everything, Universe, Life, 100", "Downward, Lowly, Floor, Below", "Different, Altered, Changed",
+                     "Or, Choose, Decide", "Separates Verb and Direct Object", "And, Combines Multiple Subjects", "Epic, Cool, Awesome", "Market, Shop, Bazaar, Business Transactions"
+                     "Thing, Phenomenon, Object", "Bad, Negative, Complicated", "Tool, Implement, Machine", "Center, Inside, Internal Organs, Stomach", "Gross, Obscene, Unclean", "Human Being, Person, Somebody",
+                     "Yellow", "Have, Carry, Hold", "Fish, Marine Animal", "Produce Sound, Utterance, Recite", "Arriving, Coming, Future, Become", "Plant, Vegetation, Herb, Leaf", "Able to, Can, May, Possible", 
+                     "To Use, With, By Means Of", "Fruit, Vegetable, Mushroom", "Also, Indeed", "Split, Cut, Sever, Sharp", "Hard Object, Metal, Rock, Stone", "Clay, Dough, Powder", "Air, Breath, Essence, Spirit",
+                     "Colorful, Pigmented, Part of the LGBTQ+", "Community, Group, Nation", "Ear, Hear, Listen", "Between Context Phrases", "Take, Seize, Catch", "Sleeping, Get", "Blue, Green", "Head, Mind, Control, Lead, Own",
+                     "Stairs, Square, Block, Corner, Cube", "Cloth, Clothing, Cover, Layer of Privacy", "Cold, Cool, Raw", "Between Subject and Verb Unless Subject is mi or sina", "Little, Small, Young", "Long Flexible Thing Like Hair or Rope",
+                     "Flat Object, Book, Card, Phone", "Red", "Located At, Real, True", "Arm, Hand, Touch, Interact", "Eye, Look, See, Read", "Door, Hole, Orifice, Window", "Earth, Land, Country, Soil", 
+                     "Parent, Ancestor, Creator, Sustainer", "Money, Cash, Wealth, Large Domesticated Animal", "Woman, Female, Wife"];
       if (globalVal >= 0){
          let defs = tokiDefs[globalVal];
          document.getElementById("definition").innerHTML=defs;
@@ -41,7 +51,7 @@
    <br>
    <br>
    
-   <button onclick="getToki();">Get Toki Pona </button>
+   <button onclick="getToki();">Get Toki Pona Word</button>
    <button onclick="getDef();" id="defBtn">Get Toki Pona Definition</button>
 
    <br>
@@ -50,5 +60,5 @@
      <br>
 <a href="./pi"><button>Wonders of Pi</button></a>
   <br>
-  <a href="./ami" position=fixed;><button>Amigurumi</button></a>
+  <a href="./ami"><button>Amigurumi</button></a>
 </body>
