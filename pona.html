@@ -6,12 +6,14 @@
       <title>Toki Pona</title>
       <style>
          .outputs { 
+         <!--Sets up div for outputs text-->
             margin: auto;
            width: 30%;
            border: 3px solid green;
            padding: 10px;
             text-align: center;
          }   
+         <!--Sets up div for buttons-->
          .buttons { 
             margin: auto;
            width: 23%;
@@ -86,13 +88,14 @@
 
    <!--Gives text spots for the functions to change-->
    <div class="outputs">
-      <h><b>Define That toki pona Word!!</b></h>
+      <h2><b>Define That toki pona Word!!</b></h2>
       <p id="words">‎</p>
       <p id="definition">‎</p>
    </div>
    <br>
    <br>
    <div class="buttons">
+      <!--Sets up buttons-->
       <button onclick="getToki();">Get Toki Pona Word</button>
       <button onclick="getDef();">Get Toki Pona Definition</button>
    </div>
