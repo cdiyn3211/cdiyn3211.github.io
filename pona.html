@@ -10,16 +10,24 @@
    
 
 <script>
+   let globalVal = -1;
    function getToki(){
       let tokiWords = ["a", "akesi", "ala", "alasa"];
       let word = tokiWords[Math.floor(Math.random() * tokiWords.length)];
+      globalVal=Math.floor(Math.random() * tokiWords.length);
       document.getElementById("words").innerHTML= word;
    }
 
    function getDef(){
       let tokiDefs = ["Emphasis", "Reptile, Amphibian", "No, Nothing, Zero, Not", "Hunt, Seek, Forage"];
-      let defs = tokiDefs[Math.floor(Math.random() * tokiDefs.length)];
-      document.getElementById("definition").innerHTML= defs;
+      if (globalVal >= 0){
+         let defs = tokiDefs[globalVal];
+         document.getElementById("definition").innerHTML=defs;
+      } else {
+         let defs = tokiDefs[Math.floor(Math.random() * tokiDefs.length)];
+         document.getElementById("definition").innerHTML= defs;
+      }
+      
    }
    
 
@@ -28,7 +36,7 @@
    
    <p id="words"></p>
    <p id="definition"></p>
-   <button onclick="getToki();">Get Toki Pona Word?</button>
+   <button onclick="getToki();">Get Toki Pona Word</button>
    <button onclick="getDef();" id="defBtn">Get Toki Pona Definition</button>
 
    <br>
