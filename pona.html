@@ -10,6 +10,9 @@
            background-color: lightblue;    
            text-align: center;
          }   
+         .buttons {
+            position: relative;
+         }
       </style>
    </head>
 <body style="background-color:powderblue;">
@@ -78,15 +81,15 @@
 
    <!--Gives text spots for the functions to change-->
    <div class="outputs">
-   <p id="words">‎</p>
-   <p id="definition">‎</p>
+      <p id="words">‎</p>
+      <p id="definition">‎</p>
    </div>
    <br>
    <br>
-   
-   <button onclick="getToki();">Get Toki Pona </button>
-   <button onclick="getDef();">Get Toki Pona Definition</button>
-
+   <div class="buttons">
+      <button onclick="getToki();">Get Toki Pona </button>
+      <button onclick="getDef();">Get Toki Pona Definition</button>
+   </div>
    <br>
    <br>
    <br>
