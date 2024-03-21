@@ -5,14 +5,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Toki Pona</title>
    </head>
-<body style="background-color:powderblue;" onload="tokiWords()">
+<body style="background-color:powderblue;" onload="getToki();">
  <h2>Learn Toki Pona</h2>
    
 
 <script>
    function getToki(){
       let tokiWords = ["a", "akesi"];
-      let word = tokiWords[Math.floor(Math.random() * myShows.length)];
+      let word = tokiWords[Math.floor(Math.random() * tokiWords.length)];
       document.getElementById("wordGotten").innerHTML= "New Stuff";
    }
    function changeColor(col){
@@ -24,7 +24,7 @@
    
 
    <p id="wordGotten">Toki word Hopefully</p>
-   <button onclick="getToki();">Pase</button>
+   <button onclick="getToki();">LikelY?</button>
    <button onclick="changeColor('blue');">Red</button>
 
    <br>
