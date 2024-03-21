@@ -11,10 +11,17 @@
 
 <script>
    function getToki(){
-      let tokiWords = ["a", "akesi"];
+      let tokiWords = ["a", "akesi", "ala", "alasa"];
       let word = tokiWords[Math.floor(Math.random() * tokiWords.length)];
       document.getElementById("wordGotten").innerHTML= word;
    }
+
+   function getDef(){
+      let tokiDefs = ["Emphasis", "Reptile, Amphibian", "No, Nothing, Zero, Not", "Hunt, Seek, Forage"];
+      let defs = tokiDefs[Math.floor(Math.random() * tokiWords.length)];
+      document.getElementById("wordGotten").innerHTML= defs;
+   }
+   
    function changeColor(col){
       const elem = document.getElementById("wordGotten");
       elem.style.color = col;
@@ -23,8 +30,9 @@
 
    
 
-   <p id="wordGotten">Toki word Hopefully</p>
-   <button onclick="getToki();">LikY?</button>
+   <p id="wordGotten"></p>
+   <button onclick="getToki();">Get Toki Pona Word</button>
+   <button onclick="getDef();">Get Toki Pona Definition</button>
    <button onclick="changeColor('blue');">Red</button>
 
    <br>
