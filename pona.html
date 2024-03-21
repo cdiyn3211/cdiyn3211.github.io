@@ -52,6 +52,7 @@
                      "House, Room, Building", "Non-Binary, Gender Non-Conforming", "Two, Cut", "Have Sex With", "Mouth, Lips, Jaw", "Battle, Challenge, Sturggle Against", "White, Whiteish", "Unique, United, One", "Bird, Winged Creature", "Strong, Powerful, Confident, Energetic", "Absent, Away, Ignored", "Must, Need, Require, Wish"];
      //Checks if val >= 0, which means a word has been selected
       if (globalVal >= 0){
+         document.getElementById("definition").style.color= "black";
          //Picks out an element from definitions list with the same index as the word list
          let defs = tokiDefs[globalVal];
          //Changes value of definitions text to the chosen definition
@@ -60,7 +61,7 @@
          //If the user hasn't generated a random word before clicking the definition button, it tells them to do that
          
          document.getElementById("definition").style.color= "red";
-         document.getElementById("definition").innerHTML= "Generate a word to define first!";
+         document.getElementById("definition").innerHTML= "GENERATE A WORD TO DEFINE FIRST!";
       }
       
    }
