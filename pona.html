@@ -18,7 +18,7 @@
 
    function getDef(){
       let tokiDefs = ["Emphasis", "Reptile, Amphibian", "No, Nothing, Zero, Not", "Hunt, Seek, Forage"];
-      let defs = tokiDefs[Math.floor(Math.random() * tokiWords.length)];
+      let defs = tokiDefs[Math.floor(Math.random() * tokiDefs.length)];
       document.getElementById("wordGotten").innerHTML= defs;
    }
    
@@ -33,7 +33,7 @@
    <p id="wordGotten"></p>
    <button onclick="getToki();">Get Toki Pona Word</button>
    <button onclick="getDef();">Get Toki Pona Definition</button>
-   <button onclick="changeColor('blue');">Red</button>
+   <button onclick="changeColor('blue');" value="Red">Red</button>
 
    <br>
    <br>
