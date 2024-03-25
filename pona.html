@@ -45,6 +45,8 @@
       globalVal=wordIndex
       //Changes word text to be the randomly chosen toki pona word
       let word = tokiWords[wordIndex];
+      //Gets rid of word so you can't get dupes
+      delete tokiWords[wordIndex];
       document.getElementById("words").innerHTML= word;
    }
 
